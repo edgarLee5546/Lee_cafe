@@ -3,10 +3,18 @@ package com.chlee.Cafe;
 public class Cafe {
 
 	public static void main(String[] args) {
-		CoffeeType coffee = CoffeeType.ì•„ë©”ë¦¬ì¹´ë…¸;
-		System.out.println("Lee cafeì— ì˜¤ì‹ ê±¸ í™˜ì˜í•©ë‹ˆë‹¤");
-		System.out.println("CoffeeType.ì•„ë©”ë¦¬ì¹´ë…¸");
-
-	}
-
+		
+		CoffeeType Coffee = CoffeeType.¾Æ¸Ş¸®Ä«³ë;
+		System.out.println("Lee cafe¿¡ ¿À½Å°É È¯¿µÇÕ´Ï´Ù.");
+		CoffeeType coffeeTypes[] = CoffeeType.values();
+		
+		String menu = String.join("/",
+				CoffeeType.Ä«Æä¶ó¶¼.toString(),
+				CoffeeType.ÇÃ·§È­ÀÌÆ®.toString(),
+				CoffeeType.Ä«Æä¸ğÄ«.toString()
+				);
+		
+		System.out.println(menu);
+		String[] memus = menu.split("/");
+}
 }
