@@ -1,5 +1,4 @@
-package CoffeeType;
-
+package MakeMyCafe;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -10,30 +9,30 @@ public class CoffeeMain {
 
 	public static void main(String[] args) {
 
-		CoffeeType coffees = CoffeeType.ì•„ë©”ë¦¬ì¹´ë…¸;
-		System.out.println("Lee cafeì— ì˜¤ì‹ ê±¸ í™˜ì˜í•©ë‹ˆë‹¤.");
+		CoffeeType coffees = CoffeeType.¾Æ¸Ş¸®Ä«³ë;
+		System.out.println("Lee cafe¿¡ ¿À½Å°É È¯¿µÇÕ´Ï´Ù.");
 		CoffeeType coffeeTypes[] = CoffeeType.values();
 
 		String menu = String.join("/", 
-				CoffeeType.ì¹´í˜ë¼ë–¼.toString(), 
-				CoffeeType.í”Œë«í™”ì´íŠ¸.toString(),
-				CoffeeType.ì¹´í‘¸ì¹˜ë…¸.toString(),
-				CoffeeType.ì•„ë©”ë¦¬ì¹´ë…¸.toString(),
-				CoffeeType.ì¹´í˜ëª¨ì¹´.toString());
+				CoffeeType.Ä«Æä¶ó¶¼.toString(), 
+				CoffeeType.ÇÃ·§È­ÀÌÆ®.toString(),
+				CoffeeType.Ä«ÇªÄ¡³ë.toString(),
+				CoffeeType.¾Æ¸Ş¸®Ä«³ë.toString(),
+				CoffeeType.Ä«Æä¸ğÄ«.toString());
 				
 		System.out.println(menu);
         int idx = LocalDate.now().getDayOfYear() % coffeeTypes.length;
 		String weekDay = LocalDateTime.now().format(
 				DateTimeFormatter.ofPattern("E")
 				.withLocale(Locale.KOREAN));
-		System.out.println(weekDay + "ìš”ì¼ ìŠ¤í˜ì…œ: " + coffeeTypes[idx]);
+		System.out.println(weekDay + "¿äÀÏ ½ºÆä¼È: " + coffeeTypes[idx]);
 		
 		
-		System.out.println("ì›í•˜ëŠ” ì»¤í”¼ ì¢…ë¥˜");
+		System.out.println("¿øÇÏ´Â Ä¿ÇÇ Á¾·ù");
 		
 		Scanner scanner = new Scanner(System.in);
-		int ì œí’ˆë²ˆí˜¸ = scanner.nextInt();
-        System.out.println("ì œí’ˆë²ˆí˜¸" + ì œí’ˆë²ˆí˜¸ + "ë¥¼ ì„ íƒí•˜ì…¨ìŠµë‹ˆë‹¤.");
+		int Á¦Ç°¹øÈ£ = scanner.nextInt();
+        System.out.println("Á¦Ç°¹øÈ£" + Á¦Ç°¹øÈ£ + "¸¦ ¼±ÅÃÇÏ¼Ì½À´Ï´Ù.");
         scanner.close();
 		
 		String[] menus = menu.split("/");
