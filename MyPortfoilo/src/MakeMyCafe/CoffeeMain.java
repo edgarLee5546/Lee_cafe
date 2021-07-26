@@ -9,30 +9,30 @@ public class CoffeeMain {
 
 	public static void main(String[] args) {
 
-		CoffeeType coffees = CoffeeType.¾Æ¸Þ¸®Ä«³ë;
-		System.out.println("Lee cafe¿¡ ¿À½Å°É È¯¿µÇÕ´Ï´Ù.");
+		CoffeeType coffees = CoffeeType.ï¿½Æ¸Þ¸ï¿½Ä«ï¿½ï¿½;
+		System.out.println("Lee cafeï¿½ï¿½ ï¿½ï¿½ï¿½Å°ï¿½ È¯ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
 		CoffeeType coffeeTypes[] = CoffeeType.values();
 
 		String menu = String.join("/", 
-				CoffeeType.Ä«Æä¶ó¶¼.toString(), 
-				CoffeeType.ÇÃ·§È­ÀÌÆ®.toString(),
-				CoffeeType.Ä«ÇªÄ¡³ë.toString(),
-				CoffeeType.¾Æ¸Þ¸®Ä«³ë.toString(),
-				CoffeeType.Ä«Æä¸ðÄ«.toString());
-				
+				CoffeeType.Ä«ï¿½ï¿½ï¿½.toString(), 
+				CoffeeType.ï¿½Ã·ï¿½È­ï¿½ï¿½Æ®.toString(),
+				CoffeeType.Ä«ÇªÄ¡ï¿½ï¿½.toString(),
+				CoffeeType.ï¿½Æ¸Þ¸ï¿½Ä«ï¿½ï¿½.toString(),
+				CoffeeType.Ä«ï¿½ï¿½ï¿½Ä«.toString());
+				cccc
 		System.out.println(menu);
         int idx = LocalDate.now().getDayOfYear() % coffeeTypes.length;
 		String weekDay = LocalDateTime.now().format(
 				DateTimeFormatter.ofPattern("E")
 				.withLocale(Locale.KOREAN));
-		System.out.println(weekDay + "¿äÀÏ ½ºÆä¼È: " + coffeeTypes[idx]);
+		System.out.println(weekDay + "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½: " + coffeeTypes[idx]);
 		
 		
-		System.out.println("¿øÇÏ´Â Ä¿ÇÇ Á¾·ù");
+		System.out.println("ï¿½ï¿½ï¿½Ï´ï¿½ Ä¿ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
 		
 		Scanner scanner = new Scanner(System.in);
-		int Á¦Ç°¹øÈ£ = scanner.nextInt();
-        System.out.println("Á¦Ç°¹øÈ£" + Á¦Ç°¹øÈ£ + "¸¦ ¼±ÅÃÇÏ¼Ì½À´Ï´Ù.");
+		int ï¿½ï¿½Ç°ï¿½ï¿½È£ = scanner.nextInt();
+        System.out.println("ï¿½ï¿½Ç°ï¿½ï¿½È£" + ï¿½ï¿½Ç°ï¿½ï¿½È£ + "ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¼Ì½ï¿½ï¿½Ï´ï¿½.");
         scanner.close();
 		
 		String[] menus = menu.split("/");
